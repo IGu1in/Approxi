@@ -50,11 +50,12 @@ namespace Approximation.Functions
 
                     for (int k = 0; k < _x.Count; k++)
                     {
-                        var digit = Math.Round(Math.Pow(_x[k], i + j), 5);
+                        var digit = Math.Round(Math.Pow(_x[k], i + j), 15);
                         value1 += digit;
+                        value1 = Math.Round(value1, 15);
                     }
 
-                    line.Add(Math.Round(value1,5));
+                    line.Add(Math.Round(value1,15));
                 }
 
                 line.Reverse();
@@ -63,10 +64,11 @@ namespace Approximation.Functions
 
                 for (int k = 0; k < _x.Count; k++)
                 {
-                    value2 += Math.Round(_y[k]*Math.Pow(_x[k], i),5);
+                    value2 += Math.Round(_y[k]*Math.Pow(_x[k], i),15);
+                    value2 = Math.Round(value2, 15);
                 }
 
-                line.Add(Math.Round(value2,5));
+                line.Add(Math.Round(value2,15));
                 matrix.Add(line);
             }
 
@@ -87,16 +89,16 @@ namespace Approximation.Functions
 
                 for (int j = 0; j <= _power; j++)
                 {
-                    value = Math.Pow(_x[i], j) * coef[j];
+                    value += Math.Pow(_x[i], j) * coef[_power-j];
                 }
 
-                functionValueAtPoint.Add(Math.Round(value, 3));
+                functionValueAtPoint.Add(Math.Round(value, 10));
             }
 
             for (int i = 0; i < _y.Count; i++)
             {
-                double value = Math.Pow(_y[i] - functionValueAtPoint[i], 2);
-                deviationsAtPoint.Add(Math.Round(value, 3));
+                double value = Math.Abs(Math.Pow(_y[i] - functionValueAtPoint[i], 2));
+                deviationsAtPoint.Add(Math.Round(value, 10));
             }
 
             foreach (var value in deviationsAtPoint)
@@ -104,7 +106,7 @@ namespace Approximation.Functions
                 sum += value;
             }
 
-            return Math.Round(sum, 5);
+            return Math.Round(sum, 8);
         }
     }
 }

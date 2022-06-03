@@ -68,7 +68,7 @@ namespace Approximation
                     if (polynomValue < minDeviation)
                     {
                         minDeviation = polynomValue;
-                        approxim = logarithm;
+                        approxim = polynom;
                     }
                 }
 

@@ -80,7 +80,7 @@ namespace Approximation.Functions
             var functionValueAtPoint = new List<double>();
             var deviationsAtPoint = new List<double>();
             double sum = 0;
-            double coefB = Math.Round(Math.Exp(coef[1]), 3);
+            double coefB =coef[1];
 
             for (int i = 0; i < _x.Count; i++)
             {

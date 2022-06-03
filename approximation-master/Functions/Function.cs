@@ -46,7 +46,7 @@ namespace Approximation.Functions
 
                     for (int i = 0; i < matrix[step].Count; i++)
                     {
-                        matrix[step][i] = Math.Round(matrix[step][i] / divider, 5);
+                        matrix[step][i] = Math.Round(matrix[step][i] / divider, 15);
                     }
 
                     for (int numberStr = step + 1; numberStr < matrix.Count; numberStr++)
@@ -55,7 +55,7 @@ namespace Approximation.Functions
 
                         for (int i = step; i < matrix[numberStr].Count; i++)
                         {
-                            matrix[numberStr][i] -= Math.Round(matrix[step][i] * coeff, 5);
+                            matrix[numberStr][i] -= Math.Round(matrix[step][i] * coeff, 15);
                         }
                     }
                 }
@@ -79,11 +79,11 @@ namespace Approximation.Functions
                         matrix[matrix.Count-1-step][matrix[matrix.Count-1-step].Count-1] -= matrix[matrix.Count-1-step][matrix[step].Count-2-i];
                     }
 
-                    coef.Add(Math.Round(matrix[matrix.Count-1-step][matrix[step].Count-1], 3));
+                    coef.Add(Math.Round(matrix[matrix.Count-1-step][matrix[step].Count-1], 15));
                 }
                 else
                 {
-                    coef.Add(Math.Round(matrix[matrix.Count-1-step][matrix[matrix.Count-1-step].Count-1], 3));
+                    coef.Add(Math.Round(matrix[matrix.Count-1-step][matrix[matrix.Count-1-step].Count-1], 15));
                 }
             }
 
