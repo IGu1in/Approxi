@@ -1,0 +1,16 @@
+C:\Users\Иван\Desktop\approximation-master\bin\Debug\net5.0\Approximation.exe
+C:\Users\Иван\Desktop\approximation-master\bin\Debug\net5.0\Approximation.deps.json
+C:\Users\Иван\Desktop\approximation-master\bin\Debug\net5.0\Approximation.runtimeconfig.json
+C:\Users\Иван\Desktop\approximation-master\bin\Debug\net5.0\Approximation.runtimeconfig.dev.json
+C:\Users\Иван\Desktop\approximation-master\bin\Debug\net5.0\Approximation.dll
+C:\Users\Иван\Desktop\approximation-master\bin\Debug\net5.0\ref\Approximation.dll
+C:\Users\Иван\Desktop\approximation-master\bin\Debug\net5.0\Approximation.pdb
+C:\Users\Иван\Desktop\approximation-master\obj\Debug\net5.0\Approximation.csproj.AssemblyReference.cache
+C:\Users\Иван\Desktop\approximation-master\obj\Debug\net5.0\Approximation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Иван\Desktop\approximation-master\obj\Debug\net5.0\Approximation.AssemblyInfoInputs.cache
+C:\Users\Иван\Desktop\approximation-master\obj\Debug\net5.0\Approximation.AssemblyInfo.cs
+C:\Users\Иван\Desktop\approximation-master\obj\Debug\net5.0\Approximation.csproj.CoreCompileInputs.cache
+C:\Users\Иван\Desktop\approximation-master\obj\Debug\net5.0\Approximation.dll
+C:\Users\Иван\Desktop\approximation-master\obj\Debug\net5.0\ref\Approximation.dll
+C:\Users\Иван\Desktop\approximation-master\obj\Debug\net5.0\Approximation.pdb
+C:\Users\Иван\Desktop\approximation-master\obj\Debug\net5.0\Approximation.genruntimeconfig.cache
